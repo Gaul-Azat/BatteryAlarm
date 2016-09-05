@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools" >
+    <data>
+        <variable name="device" type="com.gauldev.azat.batteryalarm.model.DeviceEntity"/>
+    </data>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deviceCardView"
+            card:cardElevation="2dp"
+            card:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.getName()}"
+                        android:id="@+id/deviceName"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20dp"
+                        android:layout_weight="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.getBatteryState()+'%'}"
+                        android:id="@+id/textView" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@{@string/last_update+" "+device.getDateLastUpdateToString}'
+                    android:id="@+id/date_last_update"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "594692328215",
+    "firebase_url": "https://batteryalarm-caeb9.firebaseio.com",
+    "project_id": "batteryalarm-caeb9",
+    "storage_bucket": "batteryalarm-caeb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594692328215:android:16e1035534aea391",
+        "android_client_info": {
+          "package_name": "com.gauldev.azat.batteryalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594692328215-i5tpi4a9g49ehoqqu4pem6r3mboijf70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7bY3gIuAjKDjc8c1tbNdnOsb45CBYpKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
